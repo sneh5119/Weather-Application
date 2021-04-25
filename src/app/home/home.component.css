@@ -1,0 +1,21 @@
+.center{
+    /* text-align: center; */
+    position: relative;
+    left: 43%;
+    top: 50%;
+    /* width: 30%; */
+}
+
+button{
+    padding: 6px;
+    background-color: #42545C;
+    border:none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #e8e8e8;
+    color: black;
+}

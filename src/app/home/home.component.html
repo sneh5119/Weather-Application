@@ -1,0 +1,11 @@
+<!-- <p>home works!</p> -->
+
+<p-dropdown [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" 
+optionLabel="name" [showClear]="true" class="center" (ngModelChange)="onSelectType($event)">
+</p-dropdown>
+
+<br><br>
+<nav>
+    <button (click)="weatherNavigate()" class="center">Get Weather</button>
+</nav>
+ <br><br>

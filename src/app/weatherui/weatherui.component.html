@@ -1,0 +1,24 @@
+
+<button (click)="backfunc()" class="top-left">Back To Home Screen</button>
+
+
+<div class="bodyClass">
+    
+    <div class="d-flex justify-content-center" *ngIf="display">
+        <div class="spinner-border" role="status" >
+          <span class="sr-only" id="loading"></span>
+        </div>
+      </div>
+ 
+    <div *ngIf="data">
+        <h2>weather of {{data.location.name}}</h2>
+        
+        <h2>Weather Description : {{data.current.weather_descriptions[0]}}</h2>
+
+        <img src="{{data.current.weather_icons[0]}}" alt="image">
+         
+        <h3>Temperature : {{data?.current.temperature}}</h3>
+
+    </div>
+
+</div>
